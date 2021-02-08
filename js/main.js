@@ -33,12 +33,11 @@ class Controller {
         });
       } else if (this.currentWidth <= this.bp && this.bp < this.lastWidth) {
         // sp
-				TweenMax.set(this.drawer, {
+        TweenMax.set(this.drawer, {
           x: this.drawerWidth,
         });
       }
     });
-
   }
 
   show() {
