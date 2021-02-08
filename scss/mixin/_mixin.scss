@@ -1,0 +1,16 @@
+// MediaQueries
+@mixin max($bp: 767) {
+  @media (max-width: $bp+'px') {
+    @content;
+  }
+}
+@mixin min($bp: 966) {
+  @media (min-width: $bp+'px') {
+    @content;
+  }
+}
+@mixin minmax($min: 768, $max: 965) {
+  @media (min-width: $min+'px') and (max-width: $max+'px') {
+    @content;
+  }
+}

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  /* 16px*62.5%=10px */
+}
+
+body {
+  color: #333333;
+  font-size: 1.6rem;
+  /* 10px*1.6=16px; */
+  letter-spacing: 0.1em;
+  font-family: "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS Pgothic",Osaka,sans-serif,Helvetica,Helvetica Neue,Arial,Verdana;
+  background-color: #ffffff;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  color: #333333;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* padding,marginがない要素もあるので、絞って内部・外部余白をリセット */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, figure, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* テーブルのボーダーを一本化 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 古いブラウザで起こりがちな画像の周りにブルーの線がつくのを防ぐ */
+fieldset, img {
+  border: 0;
+}
+
+/* --------------------------------------------------------------------------------
+*
+*   header
+*
+-------------------------------------------------------------------------------- */
+#header {
+  background-color: green;
+}
+
+#header .logo {
+  position: fixed;
+  left: 4rem;
+  top: 2rem;
+}
+
+#header .menubtn {
+  position: fixed;
+  right: 4rem;
+  top: 2rem;
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  background-color: #113366;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#header .menubtn-bar {
+  display: inline-block;
+  background-color: #fff;
+  width: 2.5rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#header .menubtn-bar_01 {
+  top: calc(6rem / 2 - 0.8rem);
+}
+
+#header .menubtn-bar_02 {
+  top: calc(6rem / 2);
+}
+
+#header .menubtn-bar_03 {
+  top: calc(6rem / 2 + 0.8rem);
+}
+
+#header .drawer {
+  position: fixed;
+  background-color: yellow;
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 34rem;
+  transform: translate3d(0, 0, 1);
+  z-index: 1;
+}
+
+@media (max-width: 750px) {
+  #header .drawer {
+    width: 100%;
+  }
+}

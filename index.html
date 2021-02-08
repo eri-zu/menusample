@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>メニュー開閉practice</title>
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <!-- logo -->
+      <!-- <div class="logo">
+        <a class="logo-link">
+          <img
+            class="logo-img"
+            src="../../assets/resource/img/common/logo.svg"
+            alt=""
+            width="60"
+            height="60"
+          />
+        </a>
+      </div> -->
+
+      <!-- menubtn -->
+      <div class="menubtn js-menubtn">
+        <span class="menubtn-bar menubtn-bar_01"></span>
+        <span class="menubtn-bar menubtn-bar_02"></span>
+        <span class="menubtn-bar menubtn-bar_03"></span>
+      </div>
+
+      <!-- drawer -->
+      <div class="drawer js-drawer">
+        <div class="drawer-inner">
+          <!-- nav -->
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link js-modalopenbtn" data-id="aircon1" href="">
+                  モーダル1ボタン
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-modalopenbtn" data-id="aircon2" href="">
+                  モーダル2ボタン
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- TweenMax -->
+    <script src="js/tween/TweenMax.min.js"></script>
+    <script src="js/tween/CustomEase.js"></script>
+    <script src="js/tween/DrawSVGPlugin.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="js/main.js"></script>
+    <!-- /Custom js -->
+  </body>
+</html>
